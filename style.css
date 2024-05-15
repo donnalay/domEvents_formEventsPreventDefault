@@ -1,0 +1,106 @@
+body {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  background-color: #e8f0ff;
+  font-family: monospace;
+  margin: 64px auto;
+}
+
+h1,
+h2,
+p {
+  text-align: center;
+}
+
+li > p {
+  margin: 0px;
+  color: #404040;
+  text-align: left;
+}
+
+li {
+  padding-bottom: 16px;
+}
+
+#wallofFameForm {
+  box-sizing: border-box;
+  max-width: 648px;
+  margin: 0 auto;
+  padding: 24px;
+  background-color: #ffffff;
+  border: 1px solid #ebebeb;
+  border-radius: 12px;
+}
+
+#wallofFameForm input,
+#wallofFameForm textarea,
+button {
+  width: 100%;
+}
+
+button {
+  cursor: pointer;
+  transition: ease-in-out 300ms;
+}
+
+button:hover {
+  opacity: 70%;
+}
+
+#wallofFameForm button {
+  padding: 8px 16px 8px 16px;
+  border: none;
+  background-color: #404040;
+  color: #ffffff;
+  font-weight: 700;
+  border-radius: 8px;
+}
+
+#list {
+  margin: 0;
+  padding: 0;
+}
+
+#newLi {
+  margin: 0 auto;
+  max-width: 648px;
+  box-sizing: border-box;
+  background: #fff;
+  border-radius: 12px;
+  list-style-type: none;
+  padding: 24px;
+  margin-bottom: 12px;
+}
+
+#error {
+  letter-spacing: 3px;
+  background-color: #ffdede;
+  color: #d16868;
+  padding: 8px;
+  border-radius: 8px;
+  font-weight: 900;
+  font-size: 1.2em;
+}
+
+.shake {
+  animation-name: wavy;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+@keyframes wavy {
+  0% {
+    top: 0px;
+  }
+  50% {
+    top: -8px;
+  }
+  100% {
+    top: 0px;
+  }
+}
